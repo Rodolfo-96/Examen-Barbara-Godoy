@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesion</title>
+
+    <style>
+         h1{
+        font-family: 'Georgia', cursive;
+        background-color: #0b50b8;
+            color: darkturquoise;
+        width: 300px;
+        margin: 0 auto;
+        }
+        form {
+  width: 300px;
+  margin: 0 auto;
+}
+.contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Inicio de Sesion</h1>
+    <br>
+
+    <form method="post"   >
+        Nombre: <input type="text" style="width: 200px;" placeholder="Ingrese su nombre" name="nombre"><br><br>
+        Contraseña: <input  type="password" style="width: 200px;"  placeholder="Ingrese su contraseña" name="contrasena">
+
+
+        <input type="submit" value="Ingresar">
+    <br>
+    {% if resultado %}
+    <div>{{
+         resultado.Mensaje
+        }}</div>
+    {% endif %}
+          </form>
+        <br>
+        <div class="contenedor">
+            <a href="descuento.html">
+            <button > Compra de tarros de pintura</button></a>
+        </div>
+
+</body>
+
+
+</html>
